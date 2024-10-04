@@ -1,8 +1,8 @@
 baseurl = "https://francetalentpass.com"
 DefaultContentLanguage = "zh-CN"
 DefaultContentLanguageInSubdir = true
-title = "France Talent Passport Guidelines"
-# Using theme as git submodule 
+title = "France Talent Passport - 从申请到法国生活全流程指南"
+# Using theme as git submodule
 theme = "beautifulhugo"
 # Or when using theme as hugo module
 # theme = "github.com/halogenica/beautifulhugo"
@@ -10,22 +10,20 @@ pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
-#pygmentsUseClassic = true
-#pygmentOptions = "linenos=inline"
 
 [Services]
   [Services.Disqus]
-    # Shortname = "XXX"
+    shortname = "francetalentpass"
   [Services.googleAnalytics]
-    # id = "XXX"
+    id = "G-0124XPB5RC"
 
 [Params]
-  homeTitle = "France Talent Passport"
-  subtitle = "Build a beautiful and simple website in minutes"
-  mainSections = ["post","posts"]
-  logo = "img/avatar-icon.png" # Expecting square dimensions
+  homeTitle = "法国人才护照指南 - 全流程解析"
+  subtitle = "法国人才护照：从申请到公司注册的详细步骤和技巧"
+  mainSections = ["post", "posts"]
+  logo = "img/france-logo.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
+  dateFormat = "January 2, 2024"
   commit = false
   rss = true
   comments = true
@@ -35,45 +33,39 @@ pygmentsCodefencesGuessSyntax = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
-#  cusdisID = "XXX" # Get your App id from cusdis.com
-#  hideAuthor = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
-
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#  # position: see values of CSS background-position.
-#  position = "center top"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+  ogTitle = "法国人才护照 - 全流程指南"
+  ogDescription = "了解法国人才护照的详细申请流程，从签证申请到公司运营的每一步指南。"
+  ogImage = "img/og-image.jpg"
+  twitterCard = "summary_large_image"
+  twitterTitle = "法国人才护照指南"
+  twitterDescription = "法国人才护照全流程解析，帮助您轻松获取签证并顺利开展在法国的事业。"
+  twitterImage = "img/twitter-card.jpg"
+  metaDescription = "法国人才护照指南，涵盖从申请签证到公司注册的详细信息，帮助您顺利开启在法国的事业。"
+  metaKeywords = "法国人才护照, 法国精英护照, 人才签证, 法国创业, 法国公司注册"
 
 [Params.author]
-  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "TalentPass"
-  website = "https://fr"
+  website = "https://francetalentpass.com"
   email = "info@wishfactory.io"
-  medium = "username"
-  discord = "invite code (https://discord.gg/XXXXXXX)"
-
+  linkedin = "https://linkedin.com/company/talentpass"
+  medium = "talentpass"
+  discord = "https://discord.gg/XXXXXXX"
 
 [languages]
   [languages.en]
-    contentDir = "content/en" #English
+    contentDir = "content/en" # English
     weight = 1
     languageName = "English" # Name shown in the main menu
     [languages.en.params]
-      linkedin = "https://muscaestar.github.io/myBlog/en/"
-      title = "France Talent Passport"
-      subtitle = "This is subtitle for this website"
+      #linkedin = "https://muscaestar.github.io/myBlog/en/"
+      title = "France Talent Passport - Complete Process Guide"
+      subtitle = "A detailed guide on the France Talent Passport from visa to business operations."
+      metaDescription = "Comprehensive guide for France Talent Passport, covering every step from visa application to business setup in France."
+      metaKeywords = "France Talent Passport, French Talent Visa, Business in France, Company Setup in France, Startup in France"
 
     [[languages.en.menu.main]]
-        name = "Blog"
-        url = ""
+        name = "Guide"
+        url = "page/guide/"
         weight = 1
     [[languages.en.menu.main]]
         name = "About"
@@ -83,17 +75,21 @@ pygmentsCodefencesGuessSyntax = true
         name = "Tags"
         url = "tags"
         weight = 3
+  
   [languages.zh-CN]
-    contentDir = "content/zh-CN" #Simplified Chinese
+    contentDir = "content/zh-CN" # Simplified Chinese
     weight = 2
     languageName = "简体中文" # Name shown in the main menu
     [languages.zh-CN.params]
-      linkedin = "https://muscaestar.github.io/myBlog/zh-CN/"
+      #linkedin = "https://muscaestar.github.io/myBlog/zh-CN/"
       title = "法国人才护照指南"
-      subtitle = "法国人才护照指南是法国政府为了吸引全球人才而推出的一项政策。该政策旨在为全球人才提供更加便捷的签证和居留许可，以便他们能够在法国工作和创业。"
+      subtitle = "法国人才护照指南是为了吸引全球人才而推出的政策，提供便捷的签证和公司注册流程。"
+      metaDescription = "法国人才护照详细指南，帮助您从签证申请到公司注册的全流程操作。"
+      metaKeywords = "法国人才护照, 法国精英护照, 人才签证, 法国创业, 法国公司注册"
+
     [[languages.zh-CN.menu.main]]
-        name = "博客"
-        url = ""
+        name = "指南"
+        url = "page/guide/"
         weight = 1
     [[languages.zh-CN.menu.main]]
         name = "关于"
